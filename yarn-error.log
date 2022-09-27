@@ -1,0 +1,47 @@
+Arguments: 
+  /Users/bob/.nvm/versions/node/v16.15.1/bin/node /Users/bob/.yarn/bin/yarn.js install
+
+PATH: 
+  /Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home/bin:/Users/bob/.nvm/versions/node/v16.15.1/bin:/Users/bob/.yarn/bin:/Users/bob/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/bob/Library/Android/sdk/emulator:/Users/bob/Library/Android/sdk/platform-tools:/opt/homebrew/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/bob/Projects/convert-pouchdb/package.json: Unexpected token } in JSON at position 214
+      at JSON.parse (<anonymous>)
+      at /Users/bob/.yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/Users/bob/.yarn/lib/cli.js:310:30)
+      at /Users/bob/.yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "convert-pouchdb",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+      "pouchdb": "^7.2.2",
+      "pouchdb-adapter-leveldb": "^7.2.2",
+      "pouchdb-find": "^7.2.2",
+    },
+    "scripts": {
+      "test": "echo No tests found!",
+      "start": "node index"
+    },
+    "author": "bob.feuerstein@hogarcontrols.com",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
