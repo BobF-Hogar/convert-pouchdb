@@ -1,5 +1,5 @@
 const fs = require("fs");
-const PouchDB = require("pouchdb").default;
+const PouchDB = (() => { const tmpPouch = require("pouchDB");  return (tmpPouch.plugin ? tmpPouch : tmpPouch.default)})();
 
 const OBJ_TYPE = {
     DEVICES: "devices",
